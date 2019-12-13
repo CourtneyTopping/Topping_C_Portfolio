@@ -6,15 +6,14 @@
 #logo {
   text-align: center;
   width: 5%;
-  padding-left: 5%;
-  margin-top: 0.5%;
+  padding: 1%;
 }
 
 #mainNav {
   list-style-type: none;
   text-align: right;
   float: right;
-  padding: 3% 1% 0% 1%;
+  padding: 3% 1% 1% 1%;
 }
 
 #mainNav li {
@@ -37,17 +36,12 @@
 .socials {
   width: 10%;
   margin-left: 20px;
-  margin-top: 20px;
-}
-
-#aboutBox {
-  align-content: center;
-  box-shadow: 5px 10px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 48em) {
   #logoImg {
-    width: 30%;
+    width: 10%;
   }
 }
 @media screen and (min-width: 64em) {
@@ -64,17 +58,20 @@
 }
 #promoSection {
   background: url(../images/splashLarge.jpg) no-repeat center;
-  background-size: 110%;
+  background-size: 100%;
   height: 40vh;
   text-align: center;
 }
 
 #promoSection h2 {
-  font-size: 2.6em;
+  font-size: 4em;
+  color: white;
+  margin-top: 15%;
 }
 
 #promoText {
   padding: 10%;
+  color: white;
 }
 
 @media screen and (min-width: 48em) {
@@ -91,6 +88,25 @@
     padding: 10%;
   }
 }
+#aboutSection {
+  clear: both;
+  align-content: center;
+  background-color: aqua;
+}
+
+#aboutBox {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: antiquewhite;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#vidSection {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
 .controls {
   padding: 10px;
   background-color: white;
@@ -120,6 +136,12 @@ video {
     width: 3%;
   }
 }
+#section3 {
+  background: url(../images/projectLarge.jpg) no-repeat center;
+  background-size: 100%;
+  height: 400px;
+}
+
 #mainFooter {
   background-color: #32a9ab;
   color: #fff;
@@ -127,33 +149,18 @@ video {
   padding: 5%;
 }
 
-#socialMedia {
-  padding-bottom: 5%;
-}
-
-#socialMedia a {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-#socialMedia img {
-  width: 10%;
+#backk {
+  color: white;
+  font-weight: bold;
+  align-content: center;
 }
 
 @media screen and (min-width: 48em) {
   #mainFooter p {
     font-size: 1.2em;
   }
-
-  #socialMedia img {
-    width: 8%;
-  }
 }
 @media screen and (min-width: 64em) {
-  #socialMedia img {
-    width: 5%;
-  }
-
   #mainFooter p {
     font-size: 1em;
   }
@@ -161,6 +168,52 @@ video {
   #mainFooter {
     padding: 3%;
   }
+}
+#contactHead {
+  background: url(../images/formHead.jpg) no-repeat center;
+  background-size: 120%;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+
+#contactHead h2 {
+  margin-top: 5%;
+}
+
+#contactForm {
+  padding: 2%;
+}
+
+.submit-button {
+  padding: 1%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  background-color: #98ced0;
+  font-weight: bold;
+  color: white;
+  align: center;
+}
+
+.submit-button:hover {
+  background-color: #32a9ab;
+}
+
+label {
+  color: #98ced0;
+  font-size: 100%;
+}
+
+#contactSection {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5%;
+}
+
+body, h1, h2, h3, h4 {
+  font-family: "News Cycle", sans-serif;
+}
+
+h2 {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

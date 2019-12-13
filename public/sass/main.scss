@@ -6,3 +6,11 @@
 @import "modules/_portfolio";
 @import "modules/_footer";
 @import "modules/_contact";
+
+body, h1, h2, h3, h4 {
+    font-family: 'News Cycle', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}

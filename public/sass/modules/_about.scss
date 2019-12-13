@@ -1,24 +1,33 @@
 #aboutSection {
-    text-align: center;
-    padding: 10%;
+    clear:both;
+    align-content: center;
+    background-color: aqua;
 }
 
-@media screen and (min-width: 48em) /*Tablet Size*/ {
-    #aboutSection {
-        padding: 15%;
-    }
+#aboutBox {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: antiquewhite;
+    padding: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (min-width: 64em) /*Laptop Small Size*/ {
-    #aboutSection {
-        padding: 0%
-    }
+// @media screen and (min-width: 48em) /*Tablet Size*/ {
+//     #aboutSection {
+//         padding: 15%;
+//     }
+// }
 
-    #aboutText {
-        padding: 10%;
-    }
+// @media screen and (min-width: 64em) /*Laptop Small Size*/ {
+//     #aboutSection {
+//         padding: 0%
+//     }
 
-    #aboutImg {
-        padding-top: 10%;
-    }
-}
+//     #aboutText {
+//         padding: 10%;
+//     }
+
+//     #aboutImg {
+//         padding-top: 10%;
+//     }
+// }

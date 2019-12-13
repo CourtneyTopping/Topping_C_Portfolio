@@ -1,16 +1,19 @@
 #promoSection {
     background: url(../images/splashLarge.jpg) no-repeat center;
-    background-size: 110%;
+    background-size: 100%;
     height: 40vh;
     text-align: center;
 }
 
 #promoSection h2 {
-    font-size: 2.6em;
+    font-size: 4em;
+    color: white;
+    margin-top: 15%;
 }
 
 #promoText {
     padding: 10%;
+    color: white;
 }
 
 @media screen and (min-width: 48em) /*Tablet Size*/ {
