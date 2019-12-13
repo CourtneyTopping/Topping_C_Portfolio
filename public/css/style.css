@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+#promoSection {
+  background: url(../images/splashLarge.jpg) no-repeat center;
+  background-size: 110%;
+  height: 40vh;
+  text-align: center;
+  color: $blue-color;
+}

@@ -1,0 +1,55 @@
+#mainHeader {
+    background-color: $body-bg;
+    margin-bottom: -8px;
+}
+
+#logo {
+    text-align: center;
+    width: 40%;
+    padding: 1%;
+}
+
+#mainNav {
+    list-style-type: none;
+    text-align: right;
+    float: left;
+    padding: 3% 1% 1% 1%;
+}
+
+#mainNav li {
+    border-bottom: none;
+    display: inline;
+    padding: 20px;
+    font-size: 1em;
+}
+
+#mainNav li a {
+	padding: 5px 0 5px 0;
+    color: $blue-color;
+    font-family: 'Sintony', sans-serif;
+}
+
+#mainNav li a:hover {
+	color: $yellow-color;
+}
+
+@media screen and (min-width: 48em) /*Tablet Size*/ {
+    #logoImg {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 64em) /*Laptop Small Size*/ {
+    #logo {
+        width: 25%;
+    }
+}
+
+
+@media screen and (min-width: 90em) /*Large Laptop Size*/ {
+    #logo {
+        text-align: left;
+        width: 20%;
+        padding-left: 5%;
+    }
+}
