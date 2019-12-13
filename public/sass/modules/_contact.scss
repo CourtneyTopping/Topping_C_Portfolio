@@ -1,0 +1,38 @@
+#contactHead {
+    background: url(../images/formHead.jpg) no-repeat center;
+    background-size: 120%;
+    text-align: center;
+    padding-bottom: 5%;
+    color: white;
+}
+
+#contactHead h2 {
+    margin-top: 5%;
+}
+
+#contactForm {
+    padding: 2%;
+}
+
+.submit-button {
+    padding: 1%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: $light-blue;
+    font-weight: bold;
+    color: white;
+    align: center;
+}
+
+.submit-button:hover {
+    background-color: $main-blue;
+}
+
+label {
+    color: $light-blue;
+    font-size: 100%;
+}
+
+#contactSection {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin: 5%;
+}

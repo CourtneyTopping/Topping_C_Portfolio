@@ -1,36 +1,26 @@
 #mainFooter {
-    background-color: $blue-color;
+    background-color: $main-blue;
     color: #fff;
     text-align: center;
     padding: 5%;
 }
 
-#socialMedia {
-    padding-bottom: 5%;
+#backk {
+    color: white;
+    font-weight: bold;
+    align-content: center;
 }
 
-#socialMedia a{
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
-#socialMedia img {
-    width: 10%;
-}
 
 @media screen and (min-width: 48em) /*Tablet Size*/ {
     #mainFooter p{
         font-size: 1.2em;
     }
-    #socialMedia img {
-        width: 8%;
-    }
 }
 
 @media screen and (min-width: 64em) /*Laptop Small Size*/ {
-    #socialMedia img {
-        width: 5%;
-    }
+
     #mainFooter p{
         font-size: 1em;
     }
