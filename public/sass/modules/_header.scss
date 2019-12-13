@@ -1,18 +1,18 @@
 #mainHeader {
-    background-color: $body-bg;
+    background-color: white;
     margin-bottom: -8px;
 }
 
 #logo {
     text-align: center;
-    width: 40%;
+    width: 5%;
     padding: 1%;
 }
 
 #mainNav {
     list-style-type: none;
     text-align: right;
-    float: left;
+    float: right;
     padding: 3% 1% 1% 1%;
 }
 
@@ -25,13 +25,20 @@
 
 #mainNav li a {
 	padding: 5px 0 5px 0;
-    color: $blue-color;
+    color: $main-blue;
     font-family: 'Sintony', sans-serif;
 }
 
 #mainNav li a:hover {
-	color: $yellow-color;
+	color: $orange-color;
 }
+
+.socials {
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
 
 @media screen and (min-width: 48em) /*Tablet Size*/ {
     #logoImg {
