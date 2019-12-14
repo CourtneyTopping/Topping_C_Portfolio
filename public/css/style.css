@@ -190,6 +190,10 @@ a {
   margin-left: 50px;
 }
 
+#aboutText h3 {
+  margin-bottom: 30px;
+}
+
 #sample {
   color: #32a9ab;
   margin: 20px;
@@ -246,7 +250,23 @@ video {
 #backk {
   color: white;
   font-weight: bold;
-  align-content: center;
+}
+
+#backTop {
+  margin: 0 auto;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid white;
+  margin: 0 auto;
+}
+
+#mainFooter p {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 48em) {
@@ -286,6 +306,7 @@ video {
   font-weight: bold;
   color: white;
   align: center;
+  margin: 0 auto;
 }
 
 .submit-button:hover {

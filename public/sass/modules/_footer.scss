@@ -8,10 +8,24 @@
 #backk {
     color: white;
     font-weight: bold;
-    align-content: center;
 }
 
+#backTop {
+    margin: 0 auto;
+}
 
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    margin: 0 auto;
+}
+
+#mainFooter p {
+    margin-top: 10px;
+}
 
 @media screen and (min-width: 48em) /*Tablet Size*/ {
     #mainFooter p{
