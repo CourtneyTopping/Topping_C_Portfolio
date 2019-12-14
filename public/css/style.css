@@ -177,15 +177,17 @@ a {
 #aboutSection {
   clear: both;
   align-content: center;
-  background-color: aqua;
 }
 
 #aboutBox {
-  margin-right: auto;
-  margin-left: auto;
-  background-color: antiquewhite;
+  margin: 20px 80px 50px 80px;
+  background-color: white;
   padding: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#aboutText {
+  margin-left: 50px;
 }
 
 #sample {
