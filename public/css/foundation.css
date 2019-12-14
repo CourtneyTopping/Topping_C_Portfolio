@@ -3684,7 +3684,6 @@ select {
   height: 16px;
   cursor: pointer; }
   .menu-icon::after {
-    position: absolute;
     top: 0;
     left: 0;
     display: block;
