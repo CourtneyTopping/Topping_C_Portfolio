@@ -188,6 +188,12 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#sample {
+  color: #32a9ab;
+  margin: 20px;
+  text-align: center;
+}
+
 #vidSection {
   margin-bottom: 5%;
   margin-top: 5%;

@@ -8,6 +8,7 @@ $(document).foundation();
         pausePlayBtn = document.querySelector('.pause'),
         rewindBtn = document.querySelector('.rewind'),
         replayBtn = document.querySelector('.replay'),
+        forwardBtn = document.querySelector('.forward'),
         muteBtn = document.querySelector('.mute');
 
     function pausePlay() {
@@ -36,6 +37,10 @@ $(document).foundation();
         vidPlayer.currentTime -= 5;
     }
 
+    function forwardVid() {
+        vidPlayer.currentTime += 5;
+    }
+
     function muteVid() {
         if (vidPlayer.muted === true) {
             vidPlayer.muted = false;
@@ -52,6 +57,7 @@ $(document).foundation();
     pausePlayBtn.addEventListener('click', pausePlay); //pauses/plays the video when the button is clicked
     rewindBtn.addEventListener('click', rewindVid); //rewinds video to the start when button is clicked		
     muteBtn.addEventListener('click', muteVid); //mute and unmute video when button is clicked
-    replayBtn.addEventListener('click', replayVid); //rewinds video to the start when button is clicked
+    replayBtn.addEventListener('click', replayVid);
+    forwardBtn.addEventListener('click', forwardVid); //rewinds video to the start when button is clicked
 
 })();
