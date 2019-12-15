@@ -1,3 +1,7 @@
+#contactSection {
+    clear:both;
+}
+
 #contactHead {
     background: url(../images/formHead.jpg) no-repeat center;
     background-size: 120%;
@@ -20,7 +24,6 @@
     background-color: $light-blue;
     font-weight: bold;
     color: white;
-    align: center;
     margin: 0 auto;
 }
 

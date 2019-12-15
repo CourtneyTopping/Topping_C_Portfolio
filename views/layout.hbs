@@ -90,16 +90,16 @@
     <div class="team">
         <!-- loop through all our team members and put their info on the page -->
         <!-- this is exactly like a forEach loop with plain JS -->
-        {{#each songs}}
+        {{#each portfolio}}
         <div class="user-panel">
-            <img class="u-image" src="images/{{ Image }}" alt="image">
+            <img class="u-image" src="images/{{ preview }}" alt="image">
 
             <a class="u-link" href="{{ ID }}">
                 See More Info
             </a>
 
-            <h1>{{Song}}</h1>
-            <h3>{{Artist}}</h3>
+            <h1>{{name}}</h1>
+            <h3>{{dshort}}</h3>
             </div>
 
         {{/each}}
@@ -114,9 +114,6 @@
         </div>
 
         <div class="lb-content">
-
-            
-
         </div>
     </section>
 </section>
@@ -167,7 +164,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/video.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script src="js/contact.js"></script>
   </body>
 </html>

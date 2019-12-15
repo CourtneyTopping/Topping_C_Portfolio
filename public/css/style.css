@@ -237,7 +237,101 @@ video {
 #section3 {
   background: url(../images/projectLarge.jpg) no-repeat center;
   background-size: 100%;
-  height: 400px;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.team .user-panel {
+  flex: 0 1 200px;
+  text-align: center;
+  padding: 8px;
+}
+.team .user-panel .u-avatar {
+  max-width: 200px;
+}
+.team .user-panel .u-link {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+.team .user-panel h1, .team .user-panel h3 {
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 900px) {
+  .team .user-panel {
+    flex: 1 1;
+  }
+  .team .user-panel .u-avatar {
+    max-width: 300px;
+  }
+}
+.lightbox {
+  display: none;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5000;
+  padding: 10px;
+  background-color: #faf5e3;
+  overflow: scroll;
+  align-items: center;
+}
+.lightbox .sidebar {
+  flex: 1;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lb-content {
+  margin-top: 20px;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2d2c0;
+  overflow-y: scroll;
+}
+
+img {
+  max-width: 400px;
+}
+
+.close {
+  right: 24px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 2em;
+  position: fixed;
+  border: thin solid #32a9ab;
+  padding: 2px 20px 10px;
+  border-radius: 50%;
+  background-color: #faf5e3;
+}
+
+.close:hover {
+  background-color: #98ced0;
+}
+
+.show-lb {
+  display: flex !important;
+}
+
+.u-social li {
+  display: inline-block;
+  padding: 10px;
 }
 
 #mainFooter {
@@ -283,6 +377,10 @@ video {
     padding: 3%;
   }
 }
+#contactSection {
+  clear: both;
+}
+
 #contactHead {
   background: url(../images/formHead.jpg) no-repeat center;
   background-size: 120%;
@@ -305,7 +403,6 @@ video {
   background-color: #98ced0;
   font-weight: bold;
   color: white;
-  align: center;
   margin: 0 auto;
 }
 

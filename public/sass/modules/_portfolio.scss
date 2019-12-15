@@ -1,5 +1,108 @@
 #section3 {
     background: url(../images/projectLarge.jpg) no-repeat center;
     background-size: 100%;
-    height:400px;
+}
+
+.team { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .user-panel {
+        flex: 0 1 200px;
+        text-align: center;
+        padding: 8px;
+
+        .u-avatar { max-width: 200px; }
+
+        .u-link { 
+            display: block; 
+            //width: 150px;  
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+        }
+
+        h1, h3 { margin: 5px 0; }
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .team {
+        .user-panel { 
+            flex: 1 1;
+
+            .u-avatar { max-width: 300px; }
+        }
+    }
+}
+
+
+.lightbox { 
+    display: none;
+    //display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    padding: 10px;
+    background-color: $cream-color;
+    overflow: scroll;
+    align-items: center;
+}
+    .sidebar {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+     
+    }
+    
+    .lb-content {
+        //flex: 3;
+        //color: black;
+        margin-top: 20px;
+        width: 100vw;
+        height: 50vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e2d2c0;
+        overflow-y: scroll;
+    }
+
+    img { 
+        max-width: 400px;}
+
+    .close {    
+        right: 24px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 2em;
+        position: fixed;
+        border: thin solid $main-blue;
+        padding: 2px 20px 10px;
+        border-radius: 50%;
+        background-color: $cream-color;
+    }
+
+.close:hover {
+    background-color: $light-blue;
+}
+
+.show-lb { display: flex !important; }
+
+.u-social {
+    li { 
+        display: inline-block;
+        padding: 10px;
+    }
 }
