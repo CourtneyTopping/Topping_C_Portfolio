@@ -1,6 +1,7 @@
 #section3 {
-    background: url(../images/projectLarge.jpg) no-repeat center;
-    background-size: 100%;
+    background: url(../images/projectLarge.jpg) no-repeat;
+    background-position: center top;
+    background-size: 200%;
 }
 
 .team { 
@@ -8,11 +9,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.8);
 
     .user-panel {
         flex: 0 1 200px;
         text-align: center;
-        padding: 8px;
+        padding: 8px;}
+        
 
         .u-avatar { max-width: 200px; }
 
@@ -21,13 +24,13 @@
             //width: 150px;  
             text-decoration: none;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
+            
             padding: 5px;
         }
 
         h1, h3 { margin: 5px 0; }
     }
-}
+
 
 
 
@@ -58,7 +61,7 @@
 }
     .sidebar {
         width: 100vw;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         background-color: white;
@@ -66,21 +69,23 @@
     }
     
     .lb-content {
-        //flex: 3;
+       clear:both;
+        flex: 3;
         //color: black;
-        margin-top: 20px;
+        margin-top: 5px;
         width: 100vw;
-        height: 50vh; 
+        height: 100vh; 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #e2d2c0;
+        background-color: white;
         overflow-y: scroll;
     }
 
     img { 
-        max-width: 400px;}
+        width: 70%;
+    }
 
     .close {    
         right: 24px;
@@ -100,9 +105,11 @@
 
 .show-lb { display: flex !important; }
 
-.u-social {
-    li { 
-        display: inline-block;
-        padding: 10px;
-    }
+
+.desc {
+    display: none;
+}
+
+.user-panel:hover + .desc {
+    display: inline;
 }
