@@ -4,9 +4,9 @@ a {
 }
 
 .socials {
-  width: 5%;
+  width: 4%;
   margin-left: 20px;
-  margin-top: 1%;
+  margin-top: 2%;
   float: left;
 }
 
@@ -45,6 +45,7 @@ a {
   font-size: 2em;
   padding: 5px 20px;
   text-decoration: none;
+  width: 15vw;
 }
 
 /* menu */
@@ -141,15 +142,125 @@ a {
 #promoSection {
   background: url(../images/splashLarge.jpg) no-repeat center;
   background-size: 100%;
+  background-position-y: 5%;
   text-align: center;
 }
 
 #promoSection h2 {
   font-size: 4em;
   color: white;
-  margin-top: 15%;
+  margin-top: 28%;
+  webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#promoSection h4 {
+  webkit-animation: fadein 6s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 6s;
+  /* Internet Explorer */
+  -o-animation: fadein 6s;
+  /* Opera < 12.1 */
+  animation: fadein 6s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #promoText {
   padding: 10%;
   color: white;
@@ -195,7 +306,7 @@ a {
 }
 
 #sample {
-  color: #32a9ab;
+  color: black;
   margin: 20px;
   text-align: center;
 }
@@ -207,7 +318,7 @@ a {
 
 .controls {
   padding: 10px;
-  background-color: white;
+  background-color: #f3f3f3;
   text-align: center;
 }
 
@@ -216,6 +327,10 @@ a {
   cursor: pointer;
   margin-right: 1%;
   margin-left: 1%;
+}
+
+.controls img:hover {
+  opacity: 50%;
 }
 
 #videoBox {
@@ -235,8 +350,13 @@ video {
   }
 }
 #section3 {
-  background: url(../images/projectLarge.jpg) no-repeat center;
+  background: url(../images/projectLarge.jpg) no-repeat;
+  background-position: center top;
   background-size: 100%;
+}
+
+.user-panel-heading {
+  text-align: center;
 }
 
 .team {
@@ -246,22 +366,32 @@ video {
   justify-content: space-evenly;
 }
 .team .user-panel {
-  flex: 0 1 200px;
+  flex: 0 1 400px;
   text-align: center;
   padding: 8px;
 }
-.team .user-panel .u-avatar {
-  max-width: 200px;
+.team .u-avatar {
+  max-width: 400px;
 }
-.team .user-panel .u-link {
+.team .u-link {
   display: block;
   text-decoration: none;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #98ced0;
   padding: 5px;
+  color: white;
 }
-.team .user-panel h1, .team .user-panel h3 {
+.team h1, .team h3 {
   margin: 5px 0;
+}
+
+.user-panel {
+  background-color: white;
+  margin: 10px;
+}
+
+.u-image:hover {
+  opacity: 50%;
 }
 
 @media screen and (min-width: 900px) {
@@ -281,44 +411,51 @@ video {
   top: 0;
   z-index: 5000;
   padding: 10px;
-  background-color: #faf5e3;
+  background: url(../images/lightbox.jpg) no-repeat;
   overflow: scroll;
   align-items: center;
 }
-.lightbox .sidebar {
-  flex: 1;
-  width: 100vw;
-  flex-direction: column;
+
+.sidebar {
+  width: 50vw;
+  height: 100vh;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
 }
 
 .lb-content {
-  margin-top: 20px;
+  clear: both;
+  flex: 3;
   width: 100vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100vh;
+  flex-direction: row;
   align-items: center;
-  background-color: #e2d2c0;
+  background-color: white;
   overflow-y: scroll;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.lb-content p {
+  margin-top: 30px;
 }
 
 img {
-  max-width: 400px;
+  width: 100%;
 }
 
 .close {
   right: 24px;
-  top: 10px;
+  top: 20px;
   cursor: pointer;
   font-size: 2em;
   position: fixed;
   border: thin solid #32a9ab;
   padding: 2px 20px 10px;
   border-radius: 50%;
-  background-color: #faf5e3;
+  background-color: white;
 }
 
 .close:hover {
@@ -329,9 +466,13 @@ img {
   display: flex !important;
 }
 
-.u-social li {
-  display: inline-block;
-  padding: 10px;
+.desc {
+  display: none;
+}
+
+.user-panel:hover .desc {
+  display: contents;
+  color: #32a9ab;
 }
 
 #mainFooter {
@@ -403,7 +544,7 @@ img {
   background-color: #98ced0;
   font-weight: bold;
   color: white;
-  margin: 0 auto;
+  align-items: center;
 }
 
 .submit-button:hover {
@@ -426,6 +567,10 @@ body, h1, h2, h3, h4 {
 
 h2 {
   font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
