@@ -1,5 +1,5 @@
 #sample {
-    color: $main-blue;
+    color: black;
     margin:20px;
     text-align: center;
 }
@@ -12,7 +12,7 @@
 .controls
 {
     padding: 10px;
-    background-color: white;
+    background-color: rgb(243, 243, 243);
     text-align: center;
 }
 
@@ -22,6 +22,10 @@
 	cursor: pointer;
     margin-right: 1%;
     margin-left: 1%;
+}
+
+.controls img:hover {
+    opacity: 50%;
 }
 
 #videoBox {

@@ -1,7 +1,11 @@
 #section3 {
     background: url(../images/projectLarge.jpg) no-repeat;
     background-position: center top;
-    background-size: 200%;
+    background-size: 100%;
+}
+
+.user-panel-heading {
+    text-align: center;
 }
 
 .team { 
@@ -9,29 +13,36 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.8);
 
     .user-panel {
-        flex: 0 1 200px;
+        flex: 0 1 400px;
         text-align: center;
         padding: 8px;}
         
 
-        .u-avatar { max-width: 200px; }
+        .u-avatar { max-width: 400px; }
 
         .u-link { 
             display: block; 
             //width: 150px;  
             text-decoration: none;
             margin: 0 auto;
-            
+            background-color: $light-blue;
             padding: 5px;
+            color: white;
         }
 
         h1, h3 { margin: 5px 0; }
     }
 
+.user-panel {
+    background-color: white;
+    margin: 10px;
+}
 
+.u-image:hover {
+    opacity: 50%;
+}
 
 
 @media screen and (min-width: 900px) {
@@ -55,48 +66,51 @@
     top: 0;
     z-index: 5000;
     padding: 10px;
-    background-color: $cream-color;
+    background: url(../images/lightbox.jpg) no-repeat;
     overflow: scroll;
     align-items: center;
 }
     .sidebar {
-        width: 100vw;
+        width: 50vw;
+        height: 100vh;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: white;
-     
+        margin-top: 5px;
     }
     
     .lb-content {
        clear:both;
         flex: 3;
         //color: black;
-        margin-top: 5px;
         width: 100vw;
         height: 100vh; 
-        display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
         background-color: white;
         overflow-y: scroll;
+        padding: 8px;
+        margin-left: 10px;
+    }
+
+    .lb-content p {
+        margin-top: 30px;
     }
 
     img { 
-        width: 70%;
+        width: 100%;
     }
 
     .close {    
         right: 24px;
-        top: 10px;
+        top: 20px;
         cursor: pointer;
         font-size: 2em;
         position: fixed;
         border: thin solid $main-blue;
         padding: 2px 20px 10px;
         border-radius: 50%;
-        background-color: $cream-color;
+        background-color: white;
     }
 
 .close:hover {
@@ -107,9 +121,11 @@
 
 
 .desc {
-    display: none;
+   display: none;
 }
 
-.user-panel:hover + .desc {
-    display: inline;
+.user-panel:hover .desc {
+    display: contents;
+    color: $main-blue;
+
 }
