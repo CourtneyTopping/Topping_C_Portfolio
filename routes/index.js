@@ -1,12 +1,53 @@
 var express = require('express');
 var router = express.Router();
+var auth = require('../config/mailcreds');
+var mailer = require('nodemailer');
+var sql = require('../utils/sql');
 
-var sql = require('../utils/sql')
+// set up the nodemailer stuff
+const transporter = mailer.createTransport({
+	service: 'gmail',
+	auth: {
+		user: auth.user,
+		pass: auth.pass
+	}
+});
+
+/* GET home page. */
+router.get('/', function (req, res, next) {
+	res.render('index', { title: 'Express' });
+});
+
+router.post('/mail', (req, res) => {
+	console.log('hit mail route');
+	console.log('body: ', req.body);
+
+	// get the mail options from the form -> the url params using bodyParser middleware
+
+	const mailOptions = {
+		from: req.body.usermail,
+		to: auth.user,
+		replyTo: req.body.usermail,
+		subject: `From portfolio site: Subject = ${req.body.subject || 'none'}`, // Subject line
+		text: req.body.message
+	};
+
+	transporter.sendMail(mailOptions, function (err, info) {
+		if (err) {
+			console.log("failed... ", err);
+			res.json(err);
+		} else {
+			console.log("success! ", info);
+			res.json(info);
+		}
+	});
+})
+
 router.get('/', (req, res) => {
   // should really get the user data here and then fetch it thru, but let's try this asynchronously
   console.log('at the main route');
 
-  let query = "SELECT ID, name, dshort, dfull, preview, image1, image2 FROM portfolio";
+  let query = "SELECT ID, name, dshort, dfull, preview, pagelink FROM portfolio";
 
   sql.query(query, (err, result) => {
       if (err) { throw err; console.log(err); }
