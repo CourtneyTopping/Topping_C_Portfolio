@@ -561,6 +561,63 @@ label {
   margin: 5%;
 }
 
+.infoText {
+  margin: 20px;
+}
+
+#portfolioPages {
+  margin-top: -20px;
+}
+
+#promoImage {
+  background-color: #32a9ab;
+  margin-top: 20px;
+}
+
+.titleProject {
+  background-color: #32a9ab;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titleProject img {
+  max-width: 50%;
+}
+
+.infoText h3 {
+  background-color: #98ced0;
+  padding: 10px;
+  color: white;
+}
+
+.infoText h4 {
+  color: #32a9ab;
+}
+
+#holoBack {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.titleHolo {
+  background-color: #98ced0;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titleHolo h2 {
+  padding: 10px 20px;
+}
+
+.titleThermo img {
+  width: 50%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.titleThermo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 body, h1, h2, h3, h4 {
   font-family: "News Cycle", sans-serif;
 }
