@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var sql = require('../utils/sql');
+const connect = require('../utils/sqlConnect');
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 
