@@ -1,5 +1,5 @@
 const config = require("../config");
-const sql = require('sql');
+const sql = require('mysql');
 
 const connect = sql.createPool({
   host: config.host,
