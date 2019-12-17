@@ -1,19 +1,24 @@
 .infoText {
     margin:20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    
 }
-
 
 #portfolioPages {
     margin-top: -20px;
 }
 
-#promoImage {
+.promoImage {
     background-color: $main-blue;
     margin-top: 20px;
 }
 .titleProject {
     background-color: $main-blue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    margin-bottom: 20px;
 }
 .titleProject img {
     max-width: 50%;
@@ -23,8 +28,13 @@
     background-color: $light-blue;
     padding: 10px;
     color: white;
+    margin-top: 20px
 }
 
 .infoText h4 {
     color: $main-blue;
+}
+
+.infoText img {
+    max-width: 50%;
 }
