@@ -1,5 +1,5 @@
 const config = {
-    host: "localhost",
+    host: "us-cdbr-iron-east-05.cleardb.net",
     //port: us-cdbr-iron-east-05.cleardb.net, // 8889 for mac
     uname: "bfa616d8cbb384",
     pword: "6f49dbf7", // leave blank for windows
