@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const connect = require('../utils/sql');
+var sql = require('../utils/sql');
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 
@@ -41,8 +41,6 @@ router.post('/mail', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-  sql.getConnection((err, connect) => {
-    if (err) { return console.log(error.message); }
   // should really get the user data here and then fetch it thru, but let's try this asynchronously
   console.log('at the main route');
 
@@ -57,7 +55,6 @@ router.get('/', (req, res) => {
       res.render('home', { portfolio: result });
   
   })
-})
 })
 //localhost:3000
 router.get('/:id', (req, res) => {
