@@ -289,6 +289,10 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#aboutImg {
+  margin: 0 auto;
+}
+
 #aboutText {
   margin-left: 50px;
 }
@@ -388,15 +392,15 @@ video {
 
 @media screen and (min-width: 1080px) {
   .team .user-panel {
-    flex: 1 1;
+    flex: 3 3;
   }
   .team .user-panel .u-avatar {
     max-width: 600px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .team .user-panel {
-    flex: 2 2;
+    flex: 3 3;
   }
   .team .user-panel .u-avatar {
     max-width: 800px;
@@ -569,13 +573,16 @@ label {
 
 .infoText {
   margin: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
 
 #portfolioPages {
   margin-top: -20px;
 }
 
-#promoImage {
+.promoImage {
   background-color: #32a9ab;
   margin-top: 20px;
 }
@@ -583,6 +590,7 @@ label {
 .titleProject {
   background-color: #32a9ab;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
 }
 
 .titleProject img {
@@ -593,10 +601,15 @@ label {
   background-color: #98ced0;
   padding: 10px;
   color: white;
+  margin-top: 20px;
 }
 
 .infoText h4 {
   color: #32a9ab;
+}
+
+.infoText img {
+  max-width: 50%;
 }
 
 #holoBack {
