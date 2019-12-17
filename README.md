@@ -27,5 +27,8 @@ $ git clone https://github.com/CourtneyTopping/Topping_C_Portfolio.git
 
 $ cd Topping_C_Portfolio
 
+- (Must install node files locally)
+
 # Acknowledgements
 - Video Music - https://www.fesliyanstudios.com/royalty-free-music/downloads-c/happy-music/2
+- Google Fonts "News Cycle" - https://fonts.googleapis.com/css?family=News+Cycle&display=swap
