@@ -1,5 +1,5 @@
 const myVM = (() => {
-    
+    console.log("hello");
     // get the user buttons and fire off an async DB query with Fetch
     let portfolioButtons = document.querySelectorAll('.u-link'),
         lightbox = document.querySelector('.lightbox');

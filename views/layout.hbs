@@ -19,7 +19,7 @@
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
             <li><a href="#homeLink">Home</a></li>
-            <li><a href="organ.html">About</a></li>
+            <li><a href="#aboutLink">About</a></li>
             <li><a href="#portfolioLink">Portfolio</a></li>
             <li><a href="#contactLink">Contact</a></li>
   </ul>
@@ -66,6 +66,8 @@
           <div id="videoBox">
             <video poster="images/vid_poster.png">
               <source src="images/promoReel.mp4" type="video/mp4">
+              <source src="images/promoReel.ogg" type="video/ogg">
+              <source src="images/promoReel.webm" type="video/webm">
               Sorry, your browser doesn't support video.
             </video>
             <div class="controls">
@@ -98,7 +100,7 @@
 
             <a class="u-link" href="{{ ID }}">
                 More About This Project >
-            </a>
+                <a href="{{ pagelink }}">Full Piece</a>
 
             <h3>{{name}}</h3>
             <p class="desc">{{dshort}}</p>
@@ -116,9 +118,7 @@
         </div>
 
         <div class="lb-content">
-
-          <a href="{{ pageLink }}"><button class="btn btn-outline-danger">Read More</button></a>
-        </div>
+         </div>
     </section>
 </section>
 <!-- PORTFOLIO ENDS -->

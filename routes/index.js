@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var sql = require('../utils/sql');
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
-var sql = require('../utils/sql');
+
 
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
@@ -13,10 +14,6 @@ const transporter = mailer.createTransport({
 	}
 });
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-	res.render('index', { title: 'Express' });
-});
 
 router.post('/mail', (req, res) => {
 	console.log('hit mail route');
