@@ -32,3 +32,9 @@ $ cd Topping_C_Portfolio
 # Acknowledgements
 - Video Music - https://www.fesliyanstudios.com/royalty-free-music/downloads-c/happy-music/2
 - Google Fonts "News Cycle" - https://fonts.googleapis.com/css?family=News+Cycle&display=swap
+
+# MMED-3038: Design Files
+https://drive.google.com/file/d/1FCIHcnU5dF0nr7HQzg-3sr8DD3uinSrH/view?usp=sharing
+
+# MMED-1058: Motion Files
+https://drive.google.com/file/d/16djDU3HOkutDpHHYkyvdLL7ceNjU1tw4/view?usp=sharing
