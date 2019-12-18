@@ -637,6 +637,14 @@ label {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#errorsFull {
+  background: url(../images/errorp.jpg) no-repeat center;
+  background-size: 100%;
+  background-position-y: 5%;
+  text-align: center;
+  height: 500px;
+}
+
 body, h1, h2, h3, h4 {
   font-family: "News Cycle", sans-serif;
 }
@@ -647,6 +655,10 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
