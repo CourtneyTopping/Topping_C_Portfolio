@@ -301,6 +301,11 @@ a {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1080px) {
+  #aboutSection p {
+    font-size: 150%;
+  }
+}
 #sample {
   color: black;
   margin: 20px;
@@ -346,7 +351,7 @@ video {
   }
 }
 #section3 {
-  background: url(../images/projectLarge.jpg) no-repeat;
+  background: url(../images/projectLarge.jpg) repeat;
   background-position: center top;
   background-size: 100%;
 }
